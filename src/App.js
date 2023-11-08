@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider, useRouteError } from "react-router
 
 import Home from "./pages/home"
 import ErrorBoundary from "./components/ErrorBoundary";
-import { RootLayout } from "./components/layout";
+import { RootLayout } from "./components/Layout";
 
 function App() {
 
