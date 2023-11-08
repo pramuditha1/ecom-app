@@ -1,6 +1,6 @@
 import { Outlet, Navigate, useLocation } from "react-router-dom";
 import Navbar from "../Navbar";
-import "./index.css";
+import "./index.scss";
 
 export const RootLayout = () => {
   const location = useLocation();

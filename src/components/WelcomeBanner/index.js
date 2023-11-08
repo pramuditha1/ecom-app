@@ -1,16 +1,22 @@
 import React from "react";
 import Card from "../Card";
-import "./index.css";
+import "./index.scss";
 
 const WelcomeBanner = () => {
   return (
     <div className="welcome-banner">
-      <Card>
-        
-      </Card>
-      <Card>
-        <p>welcome note here....</p>
-      </Card>
+      <div className="first-banner">
+        <Card>
+          <p>welcome note here....</p>
+          <p>welcome note here....</p>
+          <p>welcome note here....</p>ß
+        </Card>
+      </div>
+      <div className="second-banner">
+        <Card>
+          <p>welcome note here....</p>
+        </Card>
+      </div>
     </div>
   );
 };

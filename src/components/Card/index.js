@@ -1,9 +1,8 @@
 import React from 'react'
-import "./index.css"
+import "./index.scss"
 const Card = (props) => {
   return (
     <div className='card'>
-        this is card title
         {props.children}
     </div>
   )
