@@ -1,0 +1,36 @@
+.header {
+  background-color: #004567;
+  padding: 10px 20px;
+  color: rgb(188, 242, 255);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.nav-link a {
+  color: rgb(188, 242, 255);
+}
+
+.nav-link a:hover {
+  color: #838282;
+}
