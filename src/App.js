@@ -1,6 +1,7 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useRouteError } from "react-router-dom";
 import { RootLayout } from "./components/layout/RootLayout";
 import Home from "./pages/home"
+import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           element: <Home />,
         },
       ],
+      errorElement:<ErrorBoundary />
     },
   ]);
 
