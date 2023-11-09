@@ -1,4 +1,4 @@
-$firstBannerWidth: 30%;
+$firstBannerWidth: 20%;
 
 .welcome-banner {
     display: flex;
@@ -9,8 +9,10 @@ $firstBannerWidth: 30%;
 
 .first-banner {
     width: $firstBannerWidth;
+    margin: 1rem 0 1rem 0;
 }
 
 .second-banner {
     flex: 1;
+    margin: 1rem 0 1rem .5rem;
 }

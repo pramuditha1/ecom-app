@@ -1,0 +1,6 @@
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum width and number of items per row as needed */
+    gap: 10px; /* Adjust the gap between items as needed */
+  }
+  

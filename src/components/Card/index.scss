@@ -1,11 +1,10 @@
 $cardHeight: 30hv; //20% from screen size
 
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid #aac2da;
     border-radius: 7px;
-    margin: 5px;
     padding: 5px 10px;
-    min-width: 30%;
-    // align-items: stretch;
     height: 150px !important;
+    display: flex;
+    flex-direction: column;
 }

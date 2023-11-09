@@ -7,14 +7,12 @@ const WelcomeBanner = () => {
     <div className="welcome-banner">
       <div className="first-banner">
         <Card>
-          <p>welcome note here....</p>
-          <p>welcome note here....</p>
-          <p>welcome note here....</p>ß
+          11:11 banner
         </Card>
       </div>
       <div className="second-banner">
         <Card>
-          <p>welcome note here....</p>
+          promotion banners of your store....
         </Card>
       </div>
     </div>

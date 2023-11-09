@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, useRouteError } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/home"
 import ErrorBoundary from "./components/ErrorBoundary";
