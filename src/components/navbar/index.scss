@@ -1,27 +1,32 @@
 .header {
   background-color: #004567;
-  padding: 10px 20px;
+  padding: 10px;
   color: rgb(188, 242, 255);
   border-radius: 1rem;
 }
 
 .navbar {
   display: flex;
+  flex-direction: column; /* Adjust for smaller screens */
   align-items: center;
-  justify-content: space-between;
-  max-width: 90%;
-  margin: auto;
+  text-align: center;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  width: 20%;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 50px;
+  flex-direction: column; /* Display links in a column on small screens */
+  justify-content: left;
+  gap: 20px; /* Adjust spacing between links */
 }
 
 .nav-link {
@@ -30,8 +35,29 @@
 
 .nav-link a {
   color: rgb(188, 242, 255);
+  text-decoration: none;
 }
 
 .nav-link a:hover {
   color: #838282;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+
+  .navbar {
+    flex-direction: row; /* Restore horizontal layout on larger screens */
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    margin-right: 1rem; /* Add space between links */
+  }
 }

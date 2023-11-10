@@ -1,59 +1,74 @@
 .portfolio-card {
-    border: 1px solid #aac2da;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
+  border: 1px solid #aac2da;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px; /* Add margin for better spacing */
+}
 
-  .card-image {
-    padding: 5px;
-  }
-  
-  .card-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    height: auto;
-  }
-  
+.card-image {
+  padding: 5px;
+}
+
+.card-image img {
+  max-width: 100%; /* Adjusted for responsiveness */
+  border-radius: 10px;
+  height: auto;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+.card-details h3 {
+  margin: 0;
+}
+
+.card-details p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Adjusted for better spacing */
+  padding: 10px;
+}
+
+.card-actions button {
+  background-color: #1a87e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.card-actions button:hover {
+  background-color: #0056b3;
+}
+
+.card-actions h6 {
+  padding-top: 14px;
+  font-size: 14px;
+  color: rgb(254, 105, 105);
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
   .card-details {
-    padding: 10px;
+    padding: 5px; /* Adjusted padding for smaller screens */
   }
-  
-  .card-details h3 {
-    margin: 0;
-  }
-  
-  .card-details p {
-    margin: 0;
-    font-size: 16px;
-  }
-  
+
   .card-actions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px;
+    flex-direction: column; /* Stack buttons and text in a column */
+    align-items: flex-start;
   }
-  
+
   .card-actions button {
-    background-color: #1a87e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 20px;
-    cursor: pointer;
+    margin-top: 10px; /* Add space between button and text */
   }
-  
-  .card-actions button:hover {
-    background-color: #0056b3;
-  }
-  
-  .card-actions h6 {
-    padding-top: 14px;
-    font-size: 14px;
-    color: rgb(254, 105, 105);
-  }
-  
+}
