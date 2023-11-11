@@ -7,9 +7,8 @@
 
 .navbar {
   display: flex;
+  justify-content: space-around;
   flex-direction: column; /* Adjust for smaller screens */
-  align-items: center;
-  text-align: center;
 }
 
 .logo {
@@ -42,15 +41,17 @@
   color: #838282;
 }
 
+// for larger screens use media queries
 @media screen and (min-width: 768px) {
   .logo {
     display: flex;
     justify-content: flex-start;
-    margin-left: 2rem;
   }
 
   .navbar {
-    flex-direction: row; /* Restore horizontal layout on larger screens */
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
   }
 
   .nav-links {

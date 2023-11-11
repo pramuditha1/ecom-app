@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.scss"
 const Card = (props) => {
   return (
-    <div className='card'>
+    <div className='card' style={{height: props.height}}>
         {props.children}
     </div>
   )

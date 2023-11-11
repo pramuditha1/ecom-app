@@ -1,40 +1,41 @@
 .portfolio-card {
-  border: 1px solid #aac2da;
+  border: 1px solid #d3d1d1;
+  background-color: #ffffff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 10px; /* Add margin for better spacing */
+  margin: 10px;
 }
 
 .card-image {
   padding: 5px;
+  display: flex;
+  max-height: 200px;
+  justify-content: center;
+  overflow: hidden; /* Ensure the image does not overflow its container */
 }
 
 .card-image img {
-  max-width: 100%; /* Adjusted for responsiveness */
   border-radius: 10px;
-  height: auto;
+  object-fit: cover; /* Scale the image while maintaining its aspect ratio */
+  width: 60%; /* Ensure the image takes up the 60% width of its container */
+  height: 100%; /* Ensure the image takes up the full height of its container */
 }
 
 .card-details {
   padding: 10px;
 }
 
-.card-details h3 {
+.card-details h3, p {
   margin: 0;
-}
-
-.card-details p {
-  margin: 0;
-  font-size: 16px;
+  text-align: center;
 }
 
 .card-actions {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; /* Adjusted for better spacing */
+  justify-content: space-between;
   padding: 10px;
 }
 
@@ -60,15 +61,15 @@
 /* Media query for screens smaller than 600px */
 @media screen and (max-width: 600px) {
   .card-details {
-    padding: 5px; /* Adjusted padding for smaller screens */
+    padding: 5px;
   }
 
   .card-actions {
-    flex-direction: column; /* Stack buttons and text in a column */
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .card-actions button {
-    margin-top: 10px; /* Add space between button and text */
+    margin-top: 10px;
   }
 }

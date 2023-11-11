@@ -6,14 +6,12 @@ const Item = (props) => {
 
   return (
     <div className="portfolio-card">
-      <div>
-        <div className="card-image">
-          <img src={cardImage} />
-        </div>
-        <div className="card-details">
-          <h3>{title}</h3>
-          <p>{description}</p>
-        </div>
+      <div className="card-image">
+        <img src={cardImage} />
+      </div>
+      <div className="card-details">
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
       <div className="card-actions">
         {/* <img

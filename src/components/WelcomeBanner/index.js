@@ -7,7 +7,7 @@ const WelcomeBanner = () => {
   return (
     <div className="welcome-banner">
       <div className="second-banner">
-        <Card>
+        <Card height="250px">
           <ImageSlider
             images={[
               "https://img.freepik.com/free-vector/abstract-website-banner-with-modern-shapes_1361-1738.jpg",
