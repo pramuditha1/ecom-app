@@ -7,8 +7,8 @@ const WelcomeBanner = () => {
   return (
     <div className="welcome-banner">
       {/* <div className="first-banner">
-        <Card height="250px">
-          
+        <Card height="300px">
+          <p>list some details here</p>
         </Card>
       </div> */}
       <div className="second-banner">
@@ -16,8 +16,8 @@ const WelcomeBanner = () => {
           <ImageSlider
             images={[
               "https://blog.daraz.lk/wp-content/uploads/2021/10/11.11-KV-Banner.png",
-              "https://static.vecteezy.com/system/resources/thumbnails/004/299/835/small/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg",
-              "https://t4.ftcdn.net/jpg/03/06/69/49/360_F_306694930_S3Z8H9Qk1MN79ZUe7bEWqTFuonRZdemw.jpg",
+              "https://icms-image.slatic.net/images/ims-web/46bfc88b-7d16-4a52-af21-fc10ddf7ce84.webp?scm=1003.4.icms-zebra-100031632-2885430.OTHER_6502721840_7748821",
+              "https://icms-image.slatic.net/images/ims-web/1e96b789-4025-4018-8cc1-d93d94f80edc.webp?scm=1003.4.icms-zebra-100031632-2885430.OTHER_6502721833_7748821",
               
             ]}
           />

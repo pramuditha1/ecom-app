@@ -16,7 +16,6 @@ const ItemCards = () => {
     <div className="item-container">
       {data.length > 0 &&
         data.map((item, i) => {
-          console.log(item);
           return (
             <Item
               key={item.id}

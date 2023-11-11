@@ -1,0 +1,30 @@
+.item-details-modal {
+    display: grid;
+    grid-template-columns: 60% 1fr; /* 60% for the image, 1fr for the details */
+    max-width: 700px;
+    gap: 20px; /* Adjust the gap between image and details */
+  }
+  
+  .image {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%; /* Adjusted to fill the entire column */
+    height: 100%;
+  }
+  
+  .more-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .more-details p {
+    font-weight: 800;
+  }
+  
+  .more-details label {
+    color: rgb(52, 47, 124);
+    font-weight: 700;
+  }
+  
