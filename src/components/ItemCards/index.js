@@ -16,12 +16,11 @@ const ItemCards = () => {
     <div className="item-container">
       {data.length > 0 &&
         data.map((item, i) => {
+          console.log(item);
           return (
             <Item
               key={item.id}
-              cardImage={item.image}
-              title={item.title}
-              description={item.description}
+              item={item}          
             />
           );
         })}

@@ -3,7 +3,7 @@ import Modal from "../../Modal";
 import "./index.scss";
 
 const Item = (props) => {
-  const { cardImage, title, description } = props;
+  const { key, image, title, category, price, description } = props.item;
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -17,11 +17,12 @@ const Item = (props) => {
   return (
     <div className="portfolio-card">
       <div className="card-image">
-        <img src={cardImage} />
+        <img src={image} alt={`item-image-${title}`}/>
       </div>
       <div className="card-details">
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p>{category}</p>
+        <h2>$ {price}</h2>
       </div>
       <div className="card-actions">
         <button onClick={openModal}>View more details</button>
