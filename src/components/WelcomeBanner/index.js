@@ -6,13 +6,19 @@ import "./index.scss";
 const WelcomeBanner = () => {
   return (
     <div className="welcome-banner">
-      <div className="second-banner">
+      {/* <div className="first-banner">
         <Card height="250px">
+          
+        </Card>
+      </div> */}
+      <div className="second-banner">
+        <Card height="300px">
           <ImageSlider
             images={[
-              "https://img.freepik.com/free-vector/abstract-website-banner-with-modern-shapes_1361-1738.jpg",
-              "https://graphicsfamily.com/wp-content/uploads/edd/2022/01/Professional-website-banner-with-yellow-shapes-1180x627.jpg",
-              "https://i.pinimg.com/736x/e1/98/64/e198648820538645247898e06e00c5e0.jpg",
+              "https://blog.daraz.lk/wp-content/uploads/2021/10/11.11-KV-Banner.png",
+              "https://static.vecteezy.com/system/resources/previews/011/960/616/original/11-11-sale-banner-design-template-with-3d-podium-in-red-white-and-orange-color-vector.jpg",
+              "https://media.istockphoto.com/id/1321283484/vector/singles-day-sale-banner-template-11-11-global-shopping-day-holiday-event-horizontal-orange.jpg?s=1024x1024&w=is&k=20&c=z4RxswwzZ5JejJ0Sy6VGcClZM36V34SzDiVjgBYxzds=",
+              
             ]}
           />
         </Card>
