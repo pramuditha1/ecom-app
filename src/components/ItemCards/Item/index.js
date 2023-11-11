@@ -1,8 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
+import Modal from "../../Modal";
 import "./index.scss";
 
 const Item = (props) => {
   const { cardImage, title, description } = props;
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <div className="portfolio-card">
@@ -14,13 +24,12 @@ const Item = (props) => {
         <p>{description}</p>
       </div>
       <div className="card-actions">
-        {/* <img
-            width={"25px"}
-            height={"25px"}
-            src={liked ? "/assets/heart_filled.png" : "/assets/heart.png"}
-            onClick={() => setLiked((like) => !like)}
-          /> */}
+        <button onClick={openModal}>View more details</button>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <h2>Your Modal Content Goes Here</h2>
+        <p>Additional content...</p>
+      </Modal>
     </div>
   );
 };
