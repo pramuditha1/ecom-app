@@ -4,7 +4,7 @@ import "./index.scss";
 const Gallery = ({images}) => {
     console.log(images);
   return (
-    <>
+    <div className="gallery-container">
       <h1>Image Gallery</h1>
       <p>Recent occations in our organization</p>
       <br />
@@ -17,9 +17,8 @@ const Gallery = ({images}) => {
                 </div>)
             })
         }
-        
       </div>
-    </>
+    </div>
   );
 };
 
