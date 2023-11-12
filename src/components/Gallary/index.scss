@@ -1,0 +1,27 @@
+h1, h2, p {
+    color: #fff
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .grid-item {
+    border: .5px solid rgba(173, 173, 173, 0.8);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    // overflow: hidden;
+  }
+
+  .grid-item img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .grid-item:hover img {
+    transform: scale(1.5);
+  }
