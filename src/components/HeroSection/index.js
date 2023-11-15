@@ -13,7 +13,7 @@ const HeroSection = (props) => {
       <section className="aboutme">
         <div className="title">
           <h1>{name}</h1>
-          <h5>{aboutme}</h5>
+          <p>{aboutme}</p>
           <section className="social-icon-list">
             <img src={github} style={{ height: "48px" }} alt="github logo" />
             <img

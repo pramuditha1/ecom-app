@@ -5,7 +5,7 @@ const Gallery = ({images}) => {
     console.log(images);
   return (
     <div className="gallery-container">
-      <h1>Image Gallery</h1>
+      <h1>Most recent events held in our company...</h1>
       <p>Recent occations in our organization</p>
       <br />
       <div className="grid-container">

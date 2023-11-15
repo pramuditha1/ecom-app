@@ -1,13 +1,15 @@
 .heroContainer {
-    margin-top: 4rem;
     background-color: rgb(217, 213, 213);
     padding: 1rem;
     border-radius: 1rem;
     max-width: 700px;
 }
 
-.heroContainer h1, h2, h4 {
-    color: #000 !important;
+.heroContainer h1,
+.heroContainer h2,
+.heroContainer h4
+.heroContainer p {
+  color: #000 !important;
 }
 
 .aboutme {

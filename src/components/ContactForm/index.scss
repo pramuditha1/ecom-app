@@ -1,0 +1,59 @@
+.heroContainer {
+    margin-top: 1rem;
+    background-color: rgb(217, 213, 213);
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 700px;
+}
+
+.contact-form {
+    display: grid;
+    margin: 20px 20px 0 20px;
+    grid-template-columns: auto auto; /* Two columns with equal width */
+    grid-gap: 10px; /* Adjust the gap between grid items */
+    color: rgb(0, 0, 0);
+}
+
+.grid-item {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    // padding: 10px; /* Add padding for better spacing */
+}
+
+/* Additional styling for labels */
+.grid-item label {
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+/* Additional styling for input fields */
+.grid-item input {
+    width: 500px;/* Make the input fields fill the entire grid item */
+    padding: 8px;
+    box-sizing: border-box; /* Include padding in the width */
+    border-radius: .5rem;
+}
+
+/* Additional styling for buttons */
+.grid-item button {
+    padding: 8px 16px;
+    background-color: #858383; /* Green color, you can adjust it */
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 1rem;
+}
+
+/* Additional styling for buttons on hover */
+.grid-item button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
